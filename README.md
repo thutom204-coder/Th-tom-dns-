@@ -2,7 +2,7 @@
 ![GitHub release (latest SemVer)](https://img.shields.io/badge/Version-v1.1.0-yellowgreen) ![GitHub release (latest SemVer)](https://img.shields.io/badge/Language-python-yellowgreen)
 Thukhenhdns is a deep learning framework for detecting RNA modifications in nanopore direct RNA sequencing (DRS) data. It offers three modes: de novo training, transfer learning, and prediction. Researchers can train from scratch, fine-tune pre-trained models, or apply existing models for predictions. Thukhenhdn sachieves high accuracy and can be used to identify RNA modifications in various species and conditions. It provides a user-friendly solution for studying RNA modifications.
 
-To use Thukenhdns, you can follow the instructions below. The detailed usage and run examples of the three modes are available in our [document]https://github.com/thutom204-coder/Th-tom-dns-/edit/main/README.mod).
+To use Thukenhdns, you can follow the instructions below. The detailed usage and run examples of the three modes are available in our [document]https://github.com/thutom204-coder/Th-tom-dns-/edit/main/thukhenhdnsmod).
 
 ### Environment configuration
 #### The following modules are needed to run thukhenhdns. 
