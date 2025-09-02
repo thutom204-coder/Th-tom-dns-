@@ -25,7 +25,7 @@ scipy                     |1.7.0
 
 You can install dependent modules manually or install them through yaml file. The entire installation will take about 10 minutes.
 ```
-conda env create -f TandemMod.yaml
+conda env create -f Thukenhdns.yaml
 ```
 ---
 ### Data preprocessing
@@ -57,10 +57,10 @@ python scripts/extract_feature_from_signal.py  --signal_file demo/IVET/m6A.signa
 ```
 
 ---
-Three different modes has been developed: de novo training, transfer learning, and prediction. The mode of de novo training allows users to train the Thukhenhdns model from scratch using their own datasets. In the prediction mode, users can apply a pre-trained or fine-tuned Thukhenhdns model to identify modifications in their dataset. In the transfer learning mode, users can fine-tune a pre-trained TandemMod model using their own data. The execution time for each demonstration is estimated to be approximately 5-10 minutes on a "normal" desktop computer.
+Three different modes has been developed: de novo training, transfer learning, and prediction. The mode of de novo training allows users to train the Thukhenhdns model from scratch using their own datasets. In the prediction mode, users can apply a pre-trained or fine-tuned Thukhenhdns model to identify modifications in their dataset. In the transfer learning mode, users can fine-tune a pre-trained Thukhenhdns model using their own data. The execution time for each demonstration is estimated to be approximately 5-10 minutes on a "normal" desktop computer.
 ### Train your own model
 ```
-python scripts/TandemMod.py --run_mode train \
+python scripts/thukhenhdns.py --run_mode train \
      --new_model demo/model/m6A.demo.IVET.pkl \
      --train_data_mod demo/IVET/m6A.train.feature.tsv \
      --train_data_unmod demo/IVET/unmod.train.feature.tsv \
@@ -71,7 +71,7 @@ python scripts/TandemMod.py --run_mode train \
 ---
 ### Predict modifications using pretrained model.
 ```
-python scripts/TandemMod.py --run_mode predict \
+python scripts/Thukhenhdns.py --run_mode predict \
     --pretrained_model demo/model/m6A.demo.IVET.pkl \
     --feature_file demo/HEK293T/HEK293T.feature.tsv \
     --predict_result demo/HEK293T/HEK293T.prediction.tsv
